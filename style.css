@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+@import-normalize;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+input {
+  width: 350px;
+  height: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+input:focus {
+  outline: 2px solid rgb(75, 134, 223);
+  border-radius: 4px;
+}
+
+button {
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #596d48;
+  border: 0px;
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+:link {
+  color: #596d48;
+}
+
+.background {
+  background-image: url("./img/back-ground.jpg");
+  background-size: cover;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 160px;
+  margin-top: 25vh;
+  padding: 1rem;
+}
+
+#logo {
+  color: white;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 5.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: #e5e7eb;
+}
+
+.container > * {
+  padding-left: 3rem;
+  padding-right: 22rem;
+}
+
+#form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.field_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.help_text {
+  font-size: 0.8rem;
+  color: red;
+}
+
+input[type="password"] {
+  border-color: red;
+}
